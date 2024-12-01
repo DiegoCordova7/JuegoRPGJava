@@ -1,5 +1,6 @@
 package Aplicaciones.AplicacionRPG.Ui;
 
+import Aplicaciones.AplicacionRPG.Enums.Clase;
 import Aplicaciones.AplicacionRPG.Habilidades.Habilidad;
 import Aplicaciones.AplicacionRPG.Equipamiento.Armas.Arma;
 import Aplicaciones.AplicacionRPG.Equipamiento.Armaduras.Armadura;
@@ -24,7 +25,7 @@ public class Menus {
 			*/
 		public static void menuPrincipal() {
 				Menu menuPrincipal = new Menu("Menu Principal");
-				menuPrincipal.agregarOpcion("Crear Personaje", () -> menuCreacion());
+				menuPrincipal.agregarOpcion("Crear Personaje", Menus::menuCreacion);
 				menuPrincipal.agregarOpcion("Eliminar Personaje", () -> sistema.eliminarPersonaje());
 				menuPrincipal.agregarOpcion("Mostrar personajes", () -> juego.mostrarPersonajes());
 				menuPrincipal.agregarOpcion("Ver Almacen De Habilidades", () -> sistema.verAlmacenHabilidades());
@@ -40,9 +41,10 @@ public class Menus {
 			*/
 		public static void menuCreacion() {
 				Menu menuCreacion = new Menu("Menu Creacion");
-				menuCreacion.agregarOpcion("Guerrero", () -> sistema.crearPersonaje(juego, "Guerrero"));
-				menuCreacion.agregarOpcion("Mago", () -> sistema.crearPersonaje(juego, "Mago"));
-				menuCreacion.agregarOpcion("Arquero", () -> sistema.crearPersonaje(juego, "Arquero"));
+				String[] clases = Clase.clases();
+				for (String clase : clases) {
+						menuCreacion.agregarOpcion(clase, () -> sistema.crearPersonaje(juego, clase));
+				}
 				menuCreacion.ejecutar();
 		}
 		/**

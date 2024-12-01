@@ -9824,3 +9824,66 @@ NINGUNO
 [2024-12-01 13:08:28] [WARNING] Subir_Nivel: Arquero1 ahora tiene mayor precision.
 [2024-12-01 13:16:28] [INFO] Texto: Seleccione la opcion: | Ubicacion: Menu Principal | Tipo: ENTERO_POSITIVO | Dato proporcionado: 10
 [2024-12-01 13:16:28] [INFO] La aplicacion AplicacionRPG ha finalizado correctamente.
+[2024-12-01 15:48:36] [INFO] La aplicacion AplicacionRPG ha iniciado correctamente.
+[2024-12-01 15:48:36] [INFO] La aplicacion AplicacionRPG ha comenzado su ejecucion.
+[2024-12-01 15:48:36] [WARNING] Crear_Personaje: Personaje Arquero1 de clase Arquero creado con exito.
+[2024-12-01 15:48:45] [INFO] Texto: Seleccione la opcion: | Ubicacion: Menu Principal | Tipo: ENTERO_POSITIVO | Dato proporcionado: 1
+[2024-12-01 15:48:49] [INFO] Texto: Seleccione la opcion: | Ubicacion: Menu Creacion | Tipo: ENTERO_POSITIVO | Dato proporcionado: 2
+[2024-12-01 15:48:51] [INFO] Texto: Seleccione la opcion: | Ubicacion: Menu Principal | Tipo: ENTERO_POSITIVO | Dato proporcionado: 10
+[2024-12-01 15:48:51] [INFO] La aplicacion AplicacionRPG ha finalizado correctamente.
+[2024-12-01 15:49:27] [INFO] La aplicacion AplicacionRPG ha iniciado correctamente.
+[2024-12-01 15:49:27] [INFO] La aplicacion AplicacionRPG ha comenzado su ejecucion.
+[2024-12-01 15:49:27] [WARNING] Crear_Personaje: Personaje Arquero1 de clase Arquero creado con exito.
+[2024-12-01 15:49:29] [INFO] Texto: Seleccione la opcion: | Ubicacion: Menu Principal | Tipo: ENTERO_POSITIVO | Dato proporcionado: 1
+[2024-12-01 15:49:32] [INFO] Texto: Seleccione la opcion: | Ubicacion: Menu Creacion | Tipo: ENTERO_POSITIVO | Dato proporcionado: 4
+[2024-12-01 15:49:33] [INFO] Texto: Seleccione la opcion: | Ubicacion: Menu Principal | Tipo: ENTERO_POSITIVO | Dato proporcionado: 10
+[2024-12-01 15:49:33] [INFO] La aplicacion AplicacionRPG ha finalizado correctamente.
+[2024-12-01 16:03:02] [INFO] La aplicacion AplicacionRPG ha iniciado correctamente.
+[2024-12-01 16:03:02] [INFO] La aplicacion AplicacionRPG ha comenzado su ejecucion.
+[2024-12-01 16:03:02] [WARNING] Crear_Personaje: Personaje Arquero1 de clase Arquero creado con exito.
+[2024-12-01 16:03:05] [INFO] Texto: Seleccione la opcion: | Ubicacion: Menu Principal | Tipo: ENTERO_POSITIVO | Dato proporcionado: 1
+[2024-12-01 16:03:09] [INFO] Texto: Seleccione la opcion: | Ubicacion: Menu Creacion | Tipo: ENTERO_POSITIVO | Dato proporcionado: 4
+[2024-12-01 16:03:10] [INFO] Texto: Seleccione la opcion: | Ubicacion: Menu Principal | Tipo: ENTERO_POSITIVO | Dato proporcionado: 10
+[2024-12-01 16:03:10] [INFO] La aplicacion AplicacionRPG ha finalizado correctamente.
+[2024-12-01 16:05:04] [INFO] La aplicacion AplicacionRPG ha iniciado correctamente.
+[2024-12-01 16:05:04] [INFO] La aplicacion AplicacionRPG ha comenzado su ejecucion.
+[2024-12-01 16:05:04] [WARNING] Crear_Personaje: Personaje Arquero1 de clase Arquero creado con exito.
+[2024-12-01 16:05:07] [INFO] Texto: Seleccione la opcion: | Ubicacion: Menu Principal | Tipo: ENTERO_POSITIVO | Dato proporcionado: 1
+[2024-12-01 16:05:09] [INFO] Texto: Seleccione la opcion: | Ubicacion: Menu Creacion | Tipo: ENTERO_POSITIVO | Dato proporcionado: 4
+[2024-12-01 16:05:11] [INFO] Texto: Seleccione la opcion: | Ubicacion: Menu Principal | Tipo: ENTERO_POSITIVO | Dato proporcionado: 10
+[2024-12-01 16:05:11] [INFO] La aplicacion AplicacionRPG ha finalizado correctamente.
+[2024-12-01 16:09:29] [INFO] La aplicacion AplicacionRPG ha iniciado correctamente.
+[2024-12-01 16:09:29] [INFO] La aplicacion AplicacionRPG ha comenzado su ejecucion.
+[2024-12-01 16:09:30] [WARNING] Crear_Personaje: Personaje Arquero1 de clase Arquero creado con exito.
+[2024-12-01 16:09:33] [INFO] Texto: Seleccione la opcion: | Ubicacion: Menu Principal | Tipo: ENTERO_POSITIVO | Dato proporcionado: 1
+[2024-12-01 16:09:38] [INFO] Texto: Seleccione la opcion: | Ubicacion: Menu Creacion | Tipo: ENTERO_POSITIVO | Dato proporcionado: 1
+[2024-12-01 16:09:42] [INFO] Texto: Nombre: | Ubicacion: Crear_Personaje | Tipo: TEXTO | Dato proporcionado: r
+[2024-12-01 16:09:45] [INFO] Texto: Seleccione la opcion: | Ubicacion: Menu Creacion | Tipo: ENTERO_POSITIVO | Dato proporcionado: 4
+[2024-12-01 16:09:49] [INFO] Texto: Seleccione la opcion: | Ubicacion: Menu Principal | Tipo: ENTERO_POSITIVO | Dato proporcionado: 3
+[2024-12-01 16:09:49] [WARNING] Mostrar_Personajes: No hay personajes en el juego.
+[2024-12-01 16:09:52] [INFO] Texto: Seleccione la opcion: | Ubicacion: Menu Principal | Tipo: ENTERO_POSITIVO | Dato proporcionado: 10
+[2024-12-01 16:09:52] [INFO] La aplicacion AplicacionRPG ha finalizado correctamente.
+[2024-12-01 16:12:07] [INFO] La aplicacion AplicacionRPG ha iniciado correctamente.
+[2024-12-01 16:12:07] [INFO] La aplicacion AplicacionRPG ha comenzado su ejecucion.
+[2024-12-01 16:12:08] [WARNING] Crear_Personaje: Personaje Arquero1 de clase Arquero creado con exito.
+[2024-12-01 16:12:11] [INFO] Texto: Seleccione la opcion: | Ubicacion: Menu Principal | Tipo: ENTERO_POSITIVO | Dato proporcionado: 1
+[2024-12-01 16:12:13] [INFO] Texto: Seleccione la opcion: | Ubicacion: Menu Creacion | Tipo: ENTERO_POSITIVO | Dato proporcionado: 1
+[2024-12-01 16:12:14] [INFO] Texto: Nombre: | Ubicacion: Crear_Personaje | Tipo: TEXTO | Dato proporcionado: 4
+[2024-12-01 16:12:14] [WARNING] Crear_Personaje: Personaje 4 de clase Guerrero creado con exito.
+[2024-12-01 16:12:14] [WARNING] Agregar_Habilidad: Habilidad Golpe Inicial agregada al personaje
+[2024-12-01 16:12:14] [WARNING] Agregar_Personajes: Personaje agregado exitosamente.
+[2024-12-01 16:12:17] [INFO] Texto: Seleccione la opcion: | Ubicacion: Menu Creacion | Tipo: ENTERO_POSITIVO | Dato proporcionado: 4
+[2024-12-01 16:12:21] [INFO] Texto: Seleccione la opcion: | Ubicacion: Menu Principal | Tipo: ENTERO_POSITIVO | Dato proporcionado: 10
+[2024-12-01 16:12:21] [INFO] La aplicacion AplicacionRPG ha finalizado correctamente.
+[2024-12-01 16:24:48] [INFO] La aplicacion AplicacionRPG ha iniciado correctamente.
+[2024-12-01 16:24:48] [INFO] La aplicacion AplicacionRPG ha comenzado su ejecucion.
+[2024-12-01 16:24:49] [WARNING] Crear_Personaje: Personaje Arquero1 de clase Arquero creado con exito.
+[2024-12-01 16:24:50] [INFO] Texto: Seleccione la opcion: | Ubicacion: Menu Principal | Tipo: ENTERO_POSITIVO | Dato proporcionado: 1
+[2024-12-01 16:24:51] [INFO] Texto: Seleccione la opcion: | Ubicacion: Menu Creacion | Tipo: ENTERO_POSITIVO | Dato proporcionado: 1
+[2024-12-01 16:24:52] [INFO] Texto: Nombre: | Ubicacion: Crear_Personaje | Tipo: TEXTO | Dato proporcionado: 5
+[2024-12-01 16:24:52] [WARNING] Crear_Personaje: Personaje 5 de clase Guerrero creado con exito.
+[2024-12-01 16:24:52] [WARNING] Agregar_Habilidad: Habilidad Golpe Inicial agregada al personaje
+[2024-12-01 16:24:52] [WARNING] Agregar_Personajes: Personaje agregado exitosamente.
+[2024-12-01 16:24:54] [INFO] Texto: Seleccione la opcion: | Ubicacion: Menu Creacion | Tipo: ENTERO_POSITIVO | Dato proporcionado: 4
+[2024-12-01 16:24:56] [INFO] Texto: Seleccione la opcion: | Ubicacion: Menu Principal | Tipo: ENTERO_POSITIVO | Dato proporcionado: 10
+[2024-12-01 16:24:56] [INFO] La aplicacion AplicacionRPG ha finalizado correctamente.

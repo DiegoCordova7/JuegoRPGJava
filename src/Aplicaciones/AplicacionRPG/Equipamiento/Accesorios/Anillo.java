@@ -2,7 +2,6 @@ package Aplicaciones.AplicacionRPG.Equipamiento.Accesorios;
 
 import Aplicaciones.AplicacionRPG.Enums.Efecto;
 import Aplicaciones.AplicacionRPG.Enums.Material;
-import Aplicaciones.AplicacionRPG.Equipamiento.Accesorio;
 
 public class Anillo extends Accesorio {
 		private Material material;

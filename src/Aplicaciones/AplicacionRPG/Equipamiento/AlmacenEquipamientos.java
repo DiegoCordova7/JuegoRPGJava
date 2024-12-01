@@ -1,5 +1,8 @@
 package Aplicaciones.AplicacionRPG.Equipamiento;
 
+import Aplicaciones.AplicacionRPG.Equipamiento.Accesorios.Accesorio;
+import Aplicaciones.AplicacionRPG.Equipamiento.Armaduras.Armadura;
+import Aplicaciones.AplicacionRPG.Equipamiento.Armas.Arma;
 import Utilidades.Estructuras.Lista;
 import java.util.ArrayList;
 import java.util.List;

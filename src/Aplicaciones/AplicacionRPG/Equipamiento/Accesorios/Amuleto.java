@@ -2,7 +2,6 @@ package Aplicaciones.AplicacionRPG.Equipamiento.Accesorios;
 
 import Aplicaciones.AplicacionRPG.Enums.Efecto;
 import Aplicaciones.AplicacionRPG.Enums.Piedra;
-import Aplicaciones.AplicacionRPG.Equipamiento.Accesorio;
 
 public class Amuleto extends Accesorio {
 		private Piedra piedra;

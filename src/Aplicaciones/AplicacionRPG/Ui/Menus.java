@@ -1,12 +1,13 @@
 package Aplicaciones.AplicacionRPG.Ui;
 
 import Aplicaciones.AplicacionRPG.Habilidades.Habilidad;
-import Aplicaciones.AplicacionRPG.Equipamiento.Arma;
-import Aplicaciones.AplicacionRPG.Equipamiento.Armadura;
-import Aplicaciones.AplicacionRPG.Equipamiento.Accesorio;
+import Aplicaciones.AplicacionRPG.Equipamiento.Armas.Arma;
+import Aplicaciones.AplicacionRPG.Equipamiento.Armaduras.Armadura;
+import Aplicaciones.AplicacionRPG.Equipamiento.Accesorios.Accesorio;
 import Aplicaciones.AplicacionRPG.Logica.JuegoRPG;
 import Aplicaciones.AplicacionRPG.Logica.SistemaRPG;
 import Aplicaciones.AplicacionRPG.Personajes.APersonajes;
+import Aplicaciones.AplicacionRPG.Tests.TestUnitario;
 import Utilidades.Menus.Menu;
 import java.util.List;
 import static Utilidades.Impresora.imprimir;
@@ -17,6 +18,7 @@ public class Menus {
 		public static final int CAPACIDAD_MAXIMA_PERSONAJES = 10;
 		public static JuegoRPG juego = new JuegoRPG(CAPACIDAD_MAXIMA_PERSONAJES);
 		static SistemaRPG sistema = new SistemaRPG();
+		static TestUnitario testUnitario = new TestUnitario();
 		/**
 			* Muestra el menú principal del juego.
 			*/
@@ -30,6 +32,7 @@ public class Menus {
 				menuPrincipal.agregarOpcion("Cambiar Habilidades", () -> sistema.cambiarHabilidades());
 				menuPrincipal.agregarOpcion("Administrar Equipamiento", () -> menuEquipamiento(sistema.tomarPersonaje()));
 				menuPrincipal.agregarOpcion("Subir Nivel", () -> sistema.subirNivel());
+				menuPrincipal.agregarOpcion("Test", () -> testUnitario.runTest());
 				menuPrincipal.ejecutar();
 		}
 		/**

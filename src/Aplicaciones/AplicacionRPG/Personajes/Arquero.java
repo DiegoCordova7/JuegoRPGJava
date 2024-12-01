@@ -67,4 +67,8 @@ public class Arquero extends APersonajes implements ISubirNivel {
 		public void mostrarDetalles() {
 				imprimir(String.format("%sPresicion: %s", super.toString(), precision));
 		}
+
+		public int getPrecision() {
+				return precision;
+		}
 }

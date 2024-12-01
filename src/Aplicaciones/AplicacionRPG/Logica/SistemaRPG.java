@@ -1,7 +1,7 @@
 package Aplicaciones.AplicacionRPG.Logica;
-import Aplicaciones.AplicacionRPG.Equipamiento.Accesorio;
-import Aplicaciones.AplicacionRPG.Equipamiento.Arma;
-import Aplicaciones.AplicacionRPG.Equipamiento.Armadura;
+import Aplicaciones.AplicacionRPG.Equipamiento.Accesorios.Accesorio;
+import Aplicaciones.AplicacionRPG.Equipamiento.Armas.Arma;
+import Aplicaciones.AplicacionRPG.Equipamiento.Armaduras.Armadura;
 import Aplicaciones.AplicacionRPG.Habilidades.Habilidad;
 import Aplicaciones.AplicacionRPG.Habilidades.HabilidadManager;
 import Aplicaciones.AplicacionRPG.Personajes.APersonajes;

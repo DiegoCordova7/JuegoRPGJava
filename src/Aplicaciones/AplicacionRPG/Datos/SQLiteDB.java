@@ -73,7 +73,8 @@ public class SQLiteDB {
 
 		private static void crearTablasRelaciones(Statement stmt) throws SQLException {
 				String[] tablasRelaciones = {
-
+								//Esta cambia ya apartir de aca se ponen las 15 de los equipamientos, ya existe la que los enlaza a jugador,
+								//luego las agregas
 								"CREATE TABLE IF NOT EXISTS armas (" +
 												"id INTEGER PRIMARY KEY AUTOINCREMENT, " +
 												"id_tipo_dano INTEGER NOT NULL, " +

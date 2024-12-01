@@ -1,14 +1,13 @@
-package Aplicaciones.AplicacionRPG.Equipamiento.Armas;
+package Aplicaciones.AplicacionRPG.Equipamiento.Armas.ArmasDistancia;
 
 import Aplicaciones.AplicacionRPG.Enums.Efecto;
 import Aplicaciones.AplicacionRPG.Enums.TipoDeDano;
-import Aplicaciones.AplicacionRPG.Equipamiento.Arma;
+import Aplicaciones.AplicacionRPG.Equipamiento.Armas.Arma;
 
-public class Arco extends Arma {
+public abstract class ArmaDistancia extends Arma {
 		private int alcance;
-
-		public Arco(String nombre, String descripcion, int nivelRequerido, int poder,
-		            Efecto efecto, TipoDeDano tipoDeDano, int alcance) {
+		public ArmaDistancia(String nombre, String descripcion, int nivelRequerido, int poder, Efecto efecto,
+		                     TipoDeDano tipoDeDano, int alcance) {
 				super(nombre, descripcion, nivelRequerido, poder, efecto, tipoDeDano);
 				this.alcance = alcance;
 		}

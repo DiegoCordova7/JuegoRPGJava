@@ -1,7 +1,6 @@
 package Aplicaciones.AplicacionRPG.Equipamiento.Armaduras;
 
 import Aplicaciones.AplicacionRPG.Enums.Efecto;
-import Aplicaciones.AplicacionRPG.Equipamiento.Armadura;
 
 public class ArmaduraDePlacas extends Armadura {
 		private boolean esImpermeable;

@@ -1,8 +1,8 @@
-package Aplicaciones.AplicacionRPG.Equipamiento.Armas;
+package Aplicaciones.AplicacionRPG.Equipamiento.Armas.ArmasMagicas;
 
 import Aplicaciones.AplicacionRPG.Enums.Efecto;
 import Aplicaciones.AplicacionRPG.Enums.TipoDeDano;
-import Aplicaciones.AplicacionRPG.Equipamiento.Arma;
+import Aplicaciones.AplicacionRPG.Equipamiento.Armas.Arma;
 
 public abstract class ArmaMagica extends Arma {
 		private int poderMagico;

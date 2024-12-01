@@ -1,9 +1,9 @@
 package Aplicaciones.AplicacionRPG.Personajes;
 
-import Aplicaciones.AplicacionRPG.Equipamiento.Accesorio;
+import Aplicaciones.AplicacionRPG.Equipamiento.Accesorios.Accesorio;
 import Aplicaciones.AplicacionRPG.Equipamiento.AlmacenEquipamientos;
-import Aplicaciones.AplicacionRPG.Equipamiento.Arma;
-import Aplicaciones.AplicacionRPG.Equipamiento.Armadura;
+import Aplicaciones.AplicacionRPG.Equipamiento.Armas.Arma;
+import Aplicaciones.AplicacionRPG.Equipamiento.Armaduras.Armadura;
 import Aplicaciones.AplicacionRPG.Habilidades.AlmacenHabilidadesJugador;
 import Aplicaciones.AplicacionRPG.Habilidades.Habilidad;
 import Utilidades.Estructuras.Lista;
@@ -83,6 +83,9 @@ public abstract class APersonajes {
 						throw new IllegalArgumentException(String.format("El nombre %s ya esta en uso.", nombre));
 				}
 				this.id = generarId();
+				if (nombre == null || nombre.trim().isEmpty()) {
+						throw new IllegalArgumentException("El nombre no puede ser nulo o vacio.");
+				}
 				this.nombre = nombre;
 				nombresRegistrados.add(nombre);
 				this.claseJugador = claseJugador;
@@ -121,8 +124,16 @@ public abstract class APersonajes {
 						imprimirError("Reemplazar_Habilidad" ,"Indice de habilidad no valido.");
 						return;
 				}
+				for (Habilidad habilidadActiva : habilidadesActivas) {
+						if (habilidadActiva == nuevaHabilidad) {
+								imprimirAviso("Reemplazar_Habilidad", String.format("La %s ya esta activa." , habilidadActiva.getNombre()));
+								return;
+						}
+				}
+				String habilidad = (habilidadesActivas[numeroHabilidad] != null) ?
+								habilidadesActivas[numeroHabilidad].getNombre() : "N/A";
 				imprimir(String.format("Habilidad %s reemplazada por %s.",
-								habilidadesActivas[numeroHabilidad].getNombre(), nuevaHabilidad.getNombre()));
+								habilidad, nuevaHabilidad.getNombre()));
 				habilidadesActivas[numeroHabilidad] = nuevaHabilidad;
 		}
 
@@ -144,6 +155,38 @@ public abstract class APersonajes {
 				return nivel;
 		}
 
+		public double getVida() {
+				return vida;
+		}
+
+		public double getFuerzaFisica() {
+				return fuerzaFisica;
+		}
+
+		public double getFuerzaMagica() {
+				return fuerzaMagica;
+		}
+
+		public double getFuerzaDistancia() {
+				return fuerzaDistancia;
+		}
+
+		public int getDefensaDistancia() {
+				return defensaDistancia;
+		}
+
+		public int getDefensaFisica() {
+				return defensaFisica;
+		}
+
+		public int getDefensaMagica() {
+				return defensaMagica;
+		}
+
+		public double getMana() {
+				return mana;
+		}
+
 		public void agregarXP(int xp) {
 				if (this.nivel == NIVEL_MAXIMO) {
 						imprimirAviso("Agregar_XP", String.format("%s alcanzo el nivel maximo.", this.nombre));
@@ -159,7 +202,7 @@ public abstract class APersonajes {
 				}
 		}
 
-		protected void subirNivel() {
+		public void subirNivel() {
 				this.nivel++;
 				this.experienciaProximoNivel = MULTIPLICADOR_EXPERIENCIA * this.nivel;
 				imprimirAviso("Subir_Nivel", String.format("¡%s ha subido al nivel %d!", this.nombre, this.nivel));
@@ -327,6 +370,10 @@ public abstract class APersonajes {
 										"(Requiere nivel %d).", arma.getNombre(), arma.getNivelRequerido()));
 						return;
 				}
+				if (this.armaEquipada.getNombre().equalsIgnoreCase(arma.getNombre())) {
+						imprimirAviso("Equipar_Arma", String.format("Ya tienes equipada la arma: %s.", arma.getNombre()));
+						return;
+				}
 				this.armaEquipada = arma;
 				imprimirAviso("Equipar_Arma", String.format("Se ha equipado el arma: %s.", arma.getNombre()));
 		}
@@ -335,6 +382,10 @@ public abstract class APersonajes {
 				if (armadura.getNivelRequerido() > this.nivel) {
 						imprimirAviso("Equipar_Armadura", String.format("Nivel insuficiente para equipar la armadura %s" +
 										"(Requiere nivel %d).", armadura.getNombre(), armadura.getNivelRequerido()));
+						return;
+				}
+				if (this.armaduraEquipada.getNombre().equalsIgnoreCase(armadura.getNombre())) {
+						imprimirAviso("Equipar_Armadura", String.format("Ya tienes equipada la armadura: %s.", armadura.getNombre()));
 						return;
 				}
 				this.armaduraEquipada = armadura;
@@ -429,9 +480,10 @@ public abstract class APersonajes {
 
 		public void reemplazarAccesorio(int indiceAccesorio, Accesorio accesorioSeleccionado) {
 				if (indiceAccesorio < 0 || indiceAccesorio >= accesoriosEquipados.size()) {
-						imprimirError("Reemplazar_Accesorio" ,"Indice de accesorio no valido.");
+						imprimirError("Reemplazar_Accesorio", "Indice de accesorio no valido.");
 						return;
 				}
+
 				imprimir(String.format("Accesorio %s reemplazada por %s.",
 								accesoriosEquipados.get(indiceAccesorio).getNombre(), accesorioSeleccionado.getNombre()));
 				cambiarAccesorio(getAccesoriosDisponibles().get(indiceAccesorio), accesorioSeleccionado);

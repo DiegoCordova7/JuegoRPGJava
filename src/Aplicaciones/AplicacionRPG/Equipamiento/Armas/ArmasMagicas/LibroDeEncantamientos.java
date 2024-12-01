@@ -1,4 +1,4 @@
-package Aplicaciones.AplicacionRPG.Equipamiento.Armas;
+package Aplicaciones.AplicacionRPG.Equipamiento.Armas.ArmasMagicas;
 
 import Aplicaciones.AplicacionRPG.Enums.Efecto;
 import Aplicaciones.AplicacionRPG.Enums.TipoDeDano;

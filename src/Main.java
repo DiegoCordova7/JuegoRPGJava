@@ -4,7 +4,7 @@ import Aplicaciones.AplicacionRPG.Logica.AplicacionRPG;
  *
  * @param args Argumentos de la línea de comandos.
  */
-public static void main( String[] args) {
+public static void main(String[] args) {
     AplicacionRPG app = new AplicacionRPG("AplicacionRPG");
     app.inicializar();
     app.ejecutar();

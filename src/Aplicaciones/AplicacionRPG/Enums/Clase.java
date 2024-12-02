@@ -1,7 +1,4 @@
 package Aplicaciones.AplicacionRPG.Enums;
-
-import java.util.Arrays;
-
 /**
 	* Enum que representa los diferentes materiales disponibles en el juego.
 	*/
